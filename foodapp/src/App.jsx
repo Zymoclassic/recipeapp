@@ -1,5 +1,6 @@
-import { useState } from 'react'
-import Search from './components/Search'
+import { useState } from 'react';
+import Search from './components/Search';
+import FoodList from './components/FoodList';
 
 
 
@@ -10,9 +11,7 @@ const [ foodData, setFoodData ] = useState([]);
   return (
     <div className="App">
       <Search foodData={foodData} setFoodData={setFoodData} />
-      {foodData.map((food) => (
-        <h3>{food.title}</h3>
-      ))}
+      <FoodList foodData={foodData} />
     </div>
   )
 }
