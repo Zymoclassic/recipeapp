@@ -1,10 +1,11 @@
 import { useState } from "react";
+import FoodItem from "./FoodItem";
 
 export default function FoodList( {foodData} ) {
     return(
         <div>
             {foodData.map((food) => (
-                <h3>{food.title}</h3>
+                <FoodItem food={food} />
                 ))}
         </div>
     )
