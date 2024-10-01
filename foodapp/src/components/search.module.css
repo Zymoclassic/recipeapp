@@ -1,0 +1,16 @@
+.searchBox {
+    margin: 20px auto;
+    width: 300px;
+    position: relative;
+}
+
+.input {
+    border: none;
+    border-bottom: 1px solid #067717;
+    padding: 5px 20px;
+    width: 100px;
+    outline: none;
+    font-size: 15px;
+    color: #023308;
+    cursor: pointer;
+}

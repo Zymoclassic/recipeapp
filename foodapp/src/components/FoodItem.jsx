@@ -3,6 +3,7 @@ export default function FoodItem({ food }) {
         <div>
             <img src={food.strMealThumb} />
             <h3>{food.strMeal}</h3>
+            <button>View recipe</button>
         </div>
     )
 }
