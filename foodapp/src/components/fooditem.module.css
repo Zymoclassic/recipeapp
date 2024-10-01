@@ -1,0 +1,12 @@
+.itemBox {
+    margin: 20px;
+    overflow: hidden;
+    width: 300px;
+    border-radius: 8px;
+    font-family: Polysans, sans-serif;
+    box-shadow: 0 4px 6px rgb(6, 119, 23, 0.5);
+}
+
+.imgBox {
+    height: 300px;
+}
