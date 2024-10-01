@@ -4,8 +4,13 @@ export default function FoodItem({ food }) {
     return(
         <div className={styles.itemBox} >
             <img className={styles.imgBox} src={food.strMealThumb} />
-            <h3>{food.strMeal}</h3>
-            <button>View recipe</button>
+            <div className={styles.itemNameBox}>
+                <p className={styles.itemName}>{food.strMeal}</p>
+            </div>
+            <div className={styles.buttonBox} >
+                <button className={styles.itemButton} >View recipe</button>
+            </div>           
+            
         </div>
     )
 }
