@@ -1,0 +1,7 @@
+.listContainer {
+    background-color: rgba(242, 246, 245, 0.5);
+    flex: 1;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+}
