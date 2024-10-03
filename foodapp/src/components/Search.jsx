@@ -9,15 +9,26 @@ export default function Search( {foodData, setFoodData} ) {
 
     useEffect(() => {
         async function fetchFood() {
-            const res = await fetch(`${URL}?f=${query}`);
-            const data = await res.json();
-            setFoodData(data.meals);  
-        } fetchFood();
+            try{
+                const res = await fetch(`${URL}?f=${query}`);
+                const data = await res.json();
+
+                if (data.meals) {
+                    setFoodData(data.meals);
+                } else {
+                    setFoodData([]); // Set empty array when no results are found
+                }
+            } catch (error) {
+            console.error("Error fetching food data:", error);
+            setFoodData([]);
+            } // Handle fetch error by setting to empty array
+        }  
+        fetchFood();
     }, [query]);
 
     return(
         <div className={styles.searchBox}>
-            < input className={styles.input} placeholder="search meal by first letter" value={query} onChange={(e)=>setQuery(e.target.value)} type="text" />
+            < input className={styles.input} placeholder="search meal by first letter" value={query} onChange={(e)=>setQuery(e.target.value.slice(0, 1))} type="text" />
         </div>
     )
 }
