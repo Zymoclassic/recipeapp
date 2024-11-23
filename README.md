@@ -1,6 +1,8 @@
 FoodApp
 
 A simple and intuitive Recipe Sharing App built with React, designed to fetch and display delicious meal ideas from a free meal API. Perfect for food enthusiasts who love discovering new recipes with ease!
+
+Check it live here [FoodApp](https://recipeapp-dun.vercel.app/)
 ____________________________________________
 Features
 
